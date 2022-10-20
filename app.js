@@ -37,14 +37,14 @@ var request=https.request(url,option,function(response){
   }else{
       res.sendFile(__dirname + "/failure.html")
   }
-// response.on("data",function(data){
-//
-// console.log(JSON.parse(data));
-// })
+response.on("data",function(data){
+
+console.log(JSON.parse(data));
+})
 
 })
-// request.write(jsondata);
-// request.end();
+request.write(jsondata);
+request.end();
 
 });
 
