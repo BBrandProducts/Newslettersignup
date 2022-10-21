@@ -23,7 +23,7 @@ app.post("/",function(request,res) {
            FNAME:firstName,
            LNAME:lastName,
          }}]}
-         const jsondata=JSON.stringify(data);
+   const jsondata=JSON.stringify(data);
 const url="https://us21.api.mailchimp.com/3.0/lists/cbe86f37b2";
 const option={
 method: "POST",
